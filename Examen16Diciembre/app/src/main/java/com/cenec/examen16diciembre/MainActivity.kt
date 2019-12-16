@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         if(settingsFile.getBoolean("tipolista", false)){
 
-            valorTipoLista.setText("ArrayAdapter").toString()
+            valorTipoLista.setText("Mi Adapter").toString()
 
         }else{
 
-            valorTipoLista.setText("Adapter").toString()
+            valorTipoLista.setText("ArrayAdapter").toString()
         }
 
 
