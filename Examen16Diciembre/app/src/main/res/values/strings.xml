@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">¡A por el aprobado! ¡Creo en tí!</string>
+    <string name="diseño">Ejercicio de diseño</string>
+    <string name="listas">Ejercicio de listas</string>
+    <string name="preferencias">Ejercicio de preferencias</string>
+    <string name="etiquetaTipoLista">Tipo de lista:</string>
+    <string name="arrayAdapter">ArrayAdapter</string>
+    <string name="miAdapter">Mi Adapter</string>
+    <string name="almacenamiento">Ejercicio de Almacenamiento</string>
+    <string name="desconocido">Desconocido</string>
+</resources>

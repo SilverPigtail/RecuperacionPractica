@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/marcoGlobal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imagenFondo"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:src="@drawable/narutogif" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contenedorPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/etiquetaTipoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentOrange"
+            android:text="@string/etiquetaTipoLista"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/valorTipoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/arrayAdapter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/whiteColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etiquetaTipoLista" />
+
+        <LinearLayout
+            android:id="@+id/menuPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/valorTipoLista"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout
+                style="@style/buttonBorderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/parteDiseño"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rock_salt"
+                    android:text="@string/diseño" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/buttonBorderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/parteListas"
+                    style="@style/buttonStyle"
+                    android:onClick="irALista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listas" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/buttonBorderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/partePreferencias"
+                    android:onClick="irAPreferencias"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rock_salt"
+                    android:text="@string/preferencias" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                style="@style/buttonBorderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/parteAlmacenamiento"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/almacenamiento" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
