@@ -9,4 +9,6 @@
     <string name="almacenamiento">Ejercicio de Almacenamiento</string>
     <string name="desconocido">Desconocido</string>
     <string name="switchPreferencias">Switch Lista</string>
+    <string name="buttonGuardar">Guardar</string>
+    <string name="buttonListar">Listar</string>
 </resources>
