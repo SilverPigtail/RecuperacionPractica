@@ -8,4 +8,5 @@
     <string name="miAdapter">Mi Adapter</string>
     <string name="almacenamiento">Ejercicio de Almacenamiento</string>
     <string name="desconocido">Desconocido</string>
+    <string name="switchPreferencias">Switch Lista</string>
 </resources>

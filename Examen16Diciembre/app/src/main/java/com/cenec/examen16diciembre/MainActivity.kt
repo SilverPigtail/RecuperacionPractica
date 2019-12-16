@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     fun irAPreferencias(view: View) {
 
-        Intent intent = Intent
-
+         intent = Intent(this, PreferenciasActivity::class.java)
+        startActivity(intent)
 
     }
 }

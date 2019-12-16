@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/iconoapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lista"
-            android:theme="@style/ListasTheme"
-            ></activity>
+        <activity android:name=".PreferenciasActivity"></activity>
+        <activity
+            android:name=".Lista"
+            android:theme="@style/ListasTheme" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
