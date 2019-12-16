@@ -50,4 +50,10 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    fun irAAlmacenamiento(view: View) {
+
+        intent = Intent(this, AlmacenamientoActivity::class.java)
+        startActivity(intent)
+    }
 }

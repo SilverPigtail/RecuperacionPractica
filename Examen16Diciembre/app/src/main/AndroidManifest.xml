@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/iconoapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreferenciasActivity"></activity>
+        <activity android:name=".AlmacenamientoActivity"></activity>
+        <activity android:name=".PreferenciasActivity" />
         <activity
             android:name=".Lista"
             android:theme="@style/ListasTheme" />
