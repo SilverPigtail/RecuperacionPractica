@@ -1,6 +1,7 @@
 package com.cenec.examen16diciembre
 
 import android.content.ContentValues
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -49,7 +50,33 @@ class AlmacenamientoActivity : AppCompatActivity() {
                 }
 
 
+
         }
+
+
+    }
+
+    fun listarFun(view: View) {
+
+        var moh: MiOpenHelper = MiOpenHelper(this)
+        var database: SQLiteDatabase = moh.writableDatabase
+
+        var nombres: String =""
+        var nombresAux: String=""
+
+            var fila: Cursor = database.rawQuery("select * from usuarios", null)
+
+            if(fila.moveToFirst()){
+
+                nombres = fila.getString(0)
+                nombresAux =  fila.getString(0) +" , " + nombres
+                Toast.makeText(this, fila.getString(0), Toast.LENGTH_SHORT)
+
+            }else{
+                Toast.makeText(this, "Fin", Toast.LENGTH_SHORT).show()
+            }
+
+        Toast.makeText(this, nombresAux.toString(), Toast.LENGTH_LONG).show()
 
 
     }
